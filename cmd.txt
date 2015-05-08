@@ -1,0 +1,9 @@
+# Command file cmd.m
+solve;
+
+# Display Solutions  weights and objective
+display w;
+display objective;
+quit;
+
+     

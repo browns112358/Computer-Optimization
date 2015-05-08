@@ -1,0 +1,22 @@
+#CONSTANTS
+param p;  	# number of predictor variables
+param n;  	# total number of data points
+
+set P:={1..p}; 	# indices of predictor variables
+set N:={1..n}; 	# indices of observations 
+
+param X{N,P};  	# predictor data   
+param Y{N};# response data  
+
+
+#decision variables 
+var w{P};
+
+
+#OBJECTIVE FUNCTION for L2 regression
+
+minimize objective:
+sum{i in N} ( Y[i] - sum{j in P} X[i,j]*w[j] )^2;
+
+
+
