@@ -1,11 +1,9 @@
--Hunt down data for cost of living (save it as .xlsx format, please)
-
--Start to parse through the data we have and organize it (to be done in the main.m)
-
--Figure out how to associate data.  Create a Script to put all the data associated with one county together. 
-For example if one file has a population of x for Albany. and another has a crime rate of y for 'albany'.  
-Create a script (or do it manually) that can associate a population of x and a crime rate of y both with the key, "Albany".
-
--Create a script that can take the locations (in long, lat format) and compute a 'remoteness factor' 
-for each town.  This should take into account how far it is from other towns and the population of those 
-towns.  
+Person		Tasks			Due Date	
+Mark		L1 Regression AMPL	Thurs		
+Mark		L2 Regression AMPL	Thurs
+Andrew		L1 Regression Matlab	Thurs
+Andrew		L2 Regression Matlab	Thurs
+Mark 		Q1 HW5			Thurs
+Sam 		Q2 HW5			Thurs
+Theodore	Q3 HW5			Thurs
+Theodore	Normalize Data		Tues
