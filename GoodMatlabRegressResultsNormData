@@ -1,0 +1,42 @@
+***NOTA BENE: These were trained on the first 57 counties alphabetically (effectively random) and tested on the 
+***last 5 alphabetically
+*** Also regressing population on 
+
+
+L1 Coefficients: 
+0.2151 [Intercept]
+0.0928 [Per Capita Income]
+-0.2966 [Median Household Income]
+0.5586 [Median Family Size]
+0.2512 [Number of Households]
+0.0656 [Violent Crime Rate]
+-0.0528 [Property Crime Rate]
+0.2589 [Remoteness]
+
+
+L2 Coefficients:
+ 0.2627 [Intercept]
+-0.0058 [Per Capita Income]
+0.0432 [Median Household Income]
+0.2082 [Median Family Size]
+0.3806 [Number of Households]
+0.0211 [Violent Crime Rate]
+-0.0457 [Property Crime Rate]
+0.1861 [Remoteness]
+
+L1 Absolute Errors for predicted Pop. Change Rates of Test Data  (5 counties in test pool):
+0.0000    0.0000 (%)
+0.0579    22.31 (%)
+0.0054    0.71 (%)
+0.0979    46.10 (%)
+0.3280    52.06 (%)
+
+L2 Absolute Errors for predicted Pop. Change Rates of Test Data (5 counties in test pool):
+0.0223     6.91 (%)
+0.0898    34.64 (%)
+0.0547     7.20 (%)
+0.1317    62.00 (%)
+0.3075    48.79 (%)
+  
+These results are slightly better than when we included pop2010, pop2011, and overall crime. Also they're more reasonable;
+(no coefficients >1). But still the errors are pretty high. Next task is to rerun on raw data instead of normalized.
