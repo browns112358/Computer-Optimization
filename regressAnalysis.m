@@ -1,0 +1,10 @@
+A = xlsread('NormalizedMasterData');
+L1=l1regress('NormalizedMasterData');
+L2=l2regress('NormalizedMasterData');
+testData=[ones(5,1),xlsread('NormalizedMasterData',1,'B59:D63'),xlsread('NormalizedMasterData',1,'H59:H63'),xlsread('NormalizedMasterData',1,'J59:L63')];
+yhatL1=testData*L1;
+yhatL2=testData*L2;
+L1error=abs(yhatL1-A(58:end,6))
+L2error=abs(yhatL2-A(58:end,6))
+L1percentError = L1error./A(58:end,6)
+L2percentError = L2error./A(58:end,6)
