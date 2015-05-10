@@ -1,0 +1,50 @@
+***NOTA BENE: These were trained on the first 57 counties alphabetically (effectively random) and tested on the 
+***last 5 alphabetically
+*** Also regressing population on 
+
+
+L1 Coefficients: 
+0.553786904964909 [Intercept]
+0.163016918767426 [Per Capita Income]
+-0.561506702943916 [Median Household Income]
+0.908717079220878 [Median Family Size]
+-53.9446598844361 [2010 Population]
+54.8440651291303 [2011 Population]
+-0.394742015967495 [Number of households]
+75.0820266036835 [Overall CrimeRate]
+-19.9428170734000 [Violent CrimeRate]
+-64.6464317312984 [Property CrimeRate]
+0.0842761514941230 [Remoteness]
+
+L2 Coefficients:
+-5.02262008546565 [Intercept]
+-0.172364523622959 [Per Capita Income]
+0.207356992336621 [Median Household Income]
+0.266632389585210 [Median Family Size]
+-94.8442926833468 [2010 Population]
+95.2090448020010 [2011 Population]
+0.329512410516650 [Number of households]
+-1069.24030418396 [Overall CrimeRate]
+287.307552309006 [Violent CrimeRate]
+919.406091021828 [Property CrimeRate]
+-0.0201101077920813 [Remoteness]
+
+L1 Absolute Errors for predicted Pop. Change Rates of Test Data:
+  0.0000    0.0000 (%)
+  0.0463    17.86 (%)
+  0.1027    13.53 (%)
+  0.0857    40.35 (%)
+  0.3361    53.34 (%)
+
+L2 Absolute Errors for predicted Pop. Change Rates of Test Data:
+  0.0256     7.94 (%)
+  0.1056    40.72 (%)
+  0.0656     8.64 (%)
+  0.1309    61.67 (%)
+  0.3073    48.76 (%)
+  
+As we can see, these are totally wrong. I think it's because (Xi,Yi) are not i.i.d. [population change rate, our 
+independent variable, is a perfect linear function of Population 2010 and Population 2011], and also Overall Crime
+Rate is just the sum of Violent Crime and Property Crime, which means they are perfectly collinear.
+
+Going to Rerun Results without Overall Crime, Pop2010, Pop2011
