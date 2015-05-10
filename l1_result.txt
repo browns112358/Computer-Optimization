@@ -3,26 +3,25 @@ You are using the solver minos.
 Executing AMPL.
 processing data.
 processing commands.
-Executing on neos-2.neos-server.org
+Executing on neos-5.neos-server.org
 
-9 variables, all nonlinear
+8 variables, all nonlinear
 0 constraints
-1 nonlinear objective; 9 nonzeros.
+1 nonlinear objective; 8 nonzeros.
 
 MINOS 5.51: optimal solution found?  Optimality
 tests satisfied, but reduced gradient is large.
-69 iterations, objective 7.570303752
-Nonlin evals: obj = 659, grad = 658.
+86 iterations, objective 7.070016933
+Nonlin evals: obj = 856, grad = 855.
 w [*] :=
-1   0.185363
-2   0.00348031
-3  -0.367748
-4   0.661221
-5   0.299911
-6  -0.00458639
-7   0
-8  -0.00279721
-9   0.323477
+1   0.203882
+2   0.0662657
+3  -0.0155456
+4   0.276039
+5   0.223721
+6   0.0342759
+7   0.00714007
+8   0.304126
 ;
 
-objective = 7.5703
+objective = 7.07002

@@ -5,23 +5,22 @@ processing data.
 processing commands.
 Executing on neos-5.neos-server.org
 
-9 variables, all nonlinear
+8 variables, all nonlinear
 0 constraints
-1 nonlinear objective; 9 nonzeros.
+1 nonlinear objective; 8 nonzeros.
 
 MINOS 5.51: optimal solution found.
-22 iterations, objective 1.743290202
-Nonlin evals: obj = 49, grad = 48.
+18 iterations, objective 1.655675563
+Nonlin evals: obj = 39, grad = 38.
 w [*] :=
-1    0.586606
-2    0.0154626
-3   -0.122199
-4    0.350393
-5    0.359167
-6   68.4185
-7  -18.4541
-8  -58.8392
-9    0.286597
+1   0.265033
+2  -0.00220729
+3   0.044511
+4   0.206847
+5   0.380779
+6   0.0270426
+7  -0.0514219
+8   0.179841
 ;
 
-objective = 1.74329
+objective = 1.65568
